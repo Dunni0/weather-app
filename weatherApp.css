@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-position: center;
+    background-size: cover;
+    font-family: monospace;
+    background-color: #0455;
+}
+
+.mainContainer{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid; 
+    grid-template-columns: 520px 380px;
+    width: 900px;
+    max-width: 100%;
+    margin: 5rem auto;
+    text-align: center; 
+}
+
+.header{
+    text-align: start;
+    margin-bottom: 3rem;
+}
+
+.firstContainer{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/pexels-pixabay-209831.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+.secondContainer{
+    background-color: whitesmoke;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.firstContainer, .secondContainer{
+    padding: 1rem;
+    box-shadow:  0 0 4px black;
+}
+
+.current, .location{
+    margin-top: 17rem;
+}
+
+.current{
+    border-top: 2px solid #4a4b4d;
+    padding-top: 0.5rem;
+    text-align: start;
+    font-weight: bold;
+}
+
+.location{
+   display: flex;
+   flex-direction: row;
+   gap: 0.8rem;
+}
+
+#temp{
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.location div{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    box-shadow:  0 0 4px black;
+    border-radius: 10px 0 10px 0;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-style: italic;
+}
+
+label{
+    position: relative;
+}
+
+button{
+    color: #0b1516;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.5;
+    position: absolute;
+    top: 0; 
+    left: 10rem;
+    bottom: 0;
+}
+
+button:hover{
+   transform: translateX(-3px);
+}
+
+.error{
+    font-weight: bolder;
+    margin-top: 0.2rem;
+    color: #17181c;
+}
+
+.name{
+    text-align: start;
+}
+
+.secondContainer h3{
+    color: #0b1516;
+}
+
+.secondContainer p{
+    color: #4a4b4d;
+}

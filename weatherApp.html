@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="weatherApp.css">
+    <title> weather app </title>
+</head>
+<body>
+
+    <div class="mainContainer">
+
+         <div class="firstContainer">
+                
+               <p class="name"> this.weather <i class="fas fa-search"></i> </p>
+            
+                <div class="location">
+                    <div id="temp" class="temp">  </div>
+                    <div>
+                        <h3 class="city">   </h3>
+                         <p class="date">  </p> 
+                    </div>
+                    <div>
+                     <p id="icon">   </p>
+                     <p class="weather">  </p>
+                    </div>
+                </div>
+        
+         </div>
+
+        <div class="secondContainer">
+            <div class="header">
+                <h3>👋 Hello there, </h3>
+                <p> Discover the weather. </p>
+            </div>
+                <label>
+                    <input type="text" class="search" placeholder="Search by city name">
+                    <button class="button"> <i class="fas fa-search"></i> </button>
+                </label>
+                    <p class="error">  </p>
+
+                <div class="current">
+                    <div id="temperature" class="temp"> Temperature: _  <span> _ </span></div>
+                    <div id="weather2" class="weather"> Weather: _  </div>
+                    <div class="tempRange"> Temperature Range: _ / _</span></div>
+                </div>
+
+        </div>
+    </div>
+    
+</body>
+<script src="weatherApp.js"> </script>
+</html>
+
